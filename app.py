@@ -33,11 +33,14 @@ if "retry_error" not in st.session_state:
     st.session_state.retry_error = 0
 
 st.set_page_config(page_title=st.secrets["APP_PAGE_TITLE"])
+
 st.sidebar.title(st.secrets["APP_TITLE"])
 st.sidebar.divider()
 st.sidebar.markdown(st.session_state.session_id)
 st.sidebar.divider()
 
+st.header("Anandan Kumaran's Side-Kick :bird:")
+ 
 if "assistant" not in st.session_state:
     openai.api_key = st.secrets["OPENAI_API_KEY"]
 
