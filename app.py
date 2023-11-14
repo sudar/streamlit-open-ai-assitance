@@ -34,10 +34,10 @@ if "retry_error" not in st.session_state:
 
 st.set_page_config(page_title=st.secrets["APP_PAGE_TITLE"])
 
-st.sidebar.title(st.secrets["APP_TITLE"])
-st.sidebar.divider()
-st.sidebar.markdown(st.session_state.session_id)
-st.sidebar.divider()
+# st.sidebar.title(st.secrets["APP_TITLE"])
+# st.sidebar.divider()
+# st.sidebar.markdown(st.session_state.session_id)
+# st.sidebar.divider()
 
 st.header("Anandan Kumaran's Side-Kick :bird:")
  
