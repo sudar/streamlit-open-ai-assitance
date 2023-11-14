@@ -93,8 +93,9 @@ elif hasattr(st.session_state.run, 'status') and st.session_state.run.status == 
                     message_text = content_part.text.value
                     st.markdown(message_text)
 
-if prompt := st.chat_input("hi..I am Kumaran's Digital Side-kick 😉! Please ask me about his work experience, personal attrbutes or his unique parenting."):
-    with st.chat_message('user'):
+# if prompt := st.chat_input("hi..I am Kumaran's Digital Side-kick 😉! Please ask me about his work experience, personal attrbutes or his unique parenting."):
+if prompt := st.text_area("Chat input", value="hi..", height=200):
+     with st.chat_message('user'):
         st.write(prompt)
 
     # Add message to the thread
