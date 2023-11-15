@@ -40,7 +40,11 @@ st.set_page_config(page_title=st.secrets["APP_PAGE_TITLE"])
 # st.sidebar.divider()
 
 st.header("Anandan Kumaran's Side-Kick :bird:")
- 
+
+st.write("Some questions To Ask me!")
+st.markdown("**Where did Kumaran work longest**")
+st.markdown("**What is Kumaran's favorite topics**")
+
 if "assistant" not in st.session_state:
     openai.api_key = st.secrets["OPENAI_API_KEY"]
 
